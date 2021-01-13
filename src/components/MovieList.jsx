@@ -11,7 +11,7 @@ class MovieList extends React.Component {
     const { movies } = this.props;
 
     return (
-      <section>
+      <section className="movie-list">
         {movies.map((element) => <MovieCard movie={ element } key={ element.title } />)}
       </section>
     );
@@ -28,8 +28,10 @@ MovieList.propTypes = {
     rating: PropTypes.number,
     imagePath: PropTypes.string,
   }),
+  // map: PropTypes.func,
 };
 
 MovieList.defaultProps = {
   movies: PropTypes.array,
+  // map: PropTypes.func,
 };
