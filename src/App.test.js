@@ -125,13 +125,13 @@ describe('4 - Crie um componente `<Rating />`', () => {
 });
 
 describe('5 - Crie um componente `<App />`', () => {
-  it.skip('5.1 - Renderize `<Header />` dentro do componente `<App />`', () => {
+  it('5.1 - Renderize `<Header />` dentro do componente `<App />`', () => {
     wrapper = shallow(<App />);
 
     expect(wrapper.find('Header').length).toEqual(1);
   });
 
-  it.skip('5.2 - Renderize `<MovieList />` dentro do componente `<App />`', () => {
+  it('5.2 - Renderize `<MovieList />` dentro do componente `<App />`', () => {
     expect(wrapper.find('MovieList').length).toEqual(1);
   });
 });
