@@ -1,10 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-      <div className='movie-rating'>
+      <div className='rating'>
         {rating}
       </div>
     )

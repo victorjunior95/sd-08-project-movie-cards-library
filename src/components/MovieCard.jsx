@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from './Rating';
+import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
@@ -7,13 +8,13 @@ class MovieCard extends React.Component {
     const { title, subtitle, storyline, rating, imagePath } = movie;
     return (
       <div className='movie-card'>
-        <div className='body'>
-          <img src={imagePath} alt={`Cover art for ${title}.`} className='cover-art' />
-          <h4 className='movie-title'>{title}</h4>
-          <h5 className='movie-subtitle'>{subtitle}</h5>
-          <p className='movie-storyline'>{storyline}</p>
+        <div className='movie-card-body'>
+          <img src={imagePath} alt={`Cover art for ${title}.`} className='movie-card-image' />
+          <h4 className='movie-card-title'>{title}</h4>
+          <h5 className='movie-card-subtitle'>{subtitle}</h5>
+          <p className='movie-card-storyline'>{storyline}</p>
         </div>
-        <div className='movie-rating'>
+        <div className='movie-card-rating'>
           <Rating rating={rating} />
         </div>
       </div>
