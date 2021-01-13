@@ -7,13 +7,9 @@ import MovieCard from './MovieCard';
 
 export default class MovieList extends Component {
   render() {
-    const GenerateList = () => {
-      movies.map(movie => <MovieCard key={ movie.title } movie={ movie } />);
-    };
-
     return (
       <div>
-        <GenerateList />
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
     );
   }
