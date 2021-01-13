@@ -1,17 +1,15 @@
 footer {
-  padding: 10px;
   background-color: #343a40;
-  color: white;
-  text-align: center;
-  position: fixed;
   bottom: 0;
+  color: white;
   left: 0;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
   width: 100%;
 }
 
-.linked-in,
-.linked:visited,
-.linked:active {
-  text-decoration: none;
+.linked-in, .linked:visited, .linked:active {
   color: orangered;
+  text-decoration: none;
 }
