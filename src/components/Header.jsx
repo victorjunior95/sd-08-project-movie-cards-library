@@ -1,10 +1,13 @@
 import React from 'react';
-class Header extends React.component {
-    render() {
-        return (
-            <h1>Header</h1>
-        );
-    }
+
+class Header extends React.Component {
+  render() {
+    return (
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
+    );
+  }
 }
 
 export default Header;
