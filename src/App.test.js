@@ -50,7 +50,7 @@ describe('2 - Crie um componente `<MovieList />`', () => {
     shallow(<MovieList movies={movies} />);
   });
 
-  it.skip('2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
+  it('2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
     wrapper = shallow(<MovieList movies={movies} />);
 
     expect(wrapper.find(MovieCard).length).toEqual(3);
