@@ -106,7 +106,7 @@ describe('3 - Crie um componente `<MovieCard />`', () => {
 
   it('3.7 - Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
     wrapper = mount(<MovieCard movie={movie} />);
-    const starRating = wrapper.find(Rating);
+    const starRating = wrapper.find('Rating');
 
     expect(starRating.props().rating).toEqual(4.5);
   });
