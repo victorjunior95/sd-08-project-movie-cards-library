@@ -27,11 +27,10 @@ MovieList.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
+    map: PropTypes.func,
   }),
-  // map: PropTypes.func,
 };
 
 MovieList.defaultProps = {
   movies: PropTypes.array,
-  // map: PropTypes.func,
 };
