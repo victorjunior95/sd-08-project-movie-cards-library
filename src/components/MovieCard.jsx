@@ -2,7 +2,11 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    return null;
+    return (
+      <section>
+        <img src={ this.props.movie.imagePath } alt="movie cover" />
+      </section>
+    );
   }
 }
 
