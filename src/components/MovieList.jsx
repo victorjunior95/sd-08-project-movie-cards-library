@@ -18,4 +18,4 @@ export default class MovieList extends Component {
 
 MovieList.propTypes = {
   movies: PropTypes.objectOf(PropTypes.object).isRequired,
-}
+};

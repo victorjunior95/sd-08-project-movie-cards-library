@@ -16,4 +16,6 @@ export default class Rating extends Component {
   }
 }
 
-
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
