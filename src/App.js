@@ -6,7 +6,7 @@ import MovieList from './components/MovieList';
 
 
 function App() {
-  const movies = movies;
+  
   return (
     <div className="App">
       <Header />
