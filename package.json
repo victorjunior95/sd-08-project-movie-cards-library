@@ -15,8 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --verbose=true",
     "eject": "react-scripts eject",
-    "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
+    "fix": "npm run lint:styles:fix && npm run lint:fix",
+    "lint:styles": "npx stylelint '*/.css'",
+    "lint:styles:fix": "npx stylelint --fix '*/.css'",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
+    "lint:fix": "eslint --fix --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
