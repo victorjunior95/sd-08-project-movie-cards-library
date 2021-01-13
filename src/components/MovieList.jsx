@@ -9,8 +9,11 @@ class MovieList extends React.Component {
     const { movies } = this.props;
     return (
       <div className="movie-list">
-        { movies.map((mv) => <MovieCard key={ mv.title }
-        movie={ mv } className="movie-card" />) }
+        { movies.map((mv) => (<MovieCard
+          key={ mv.title }
+          movie={ mv }
+          className="movie-card"
+        />)) }
         ;
       </div>
     );
