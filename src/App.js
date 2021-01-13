@@ -8,8 +8,8 @@ import MovieList from './components/MovieList';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MovieList movies={ data } />
+      <Header className="movie-card-header" />
+      <MovieList className="movie-list" movies={ data } />
     </div>
   );
 }
