@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from './Header'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
+      <Header message="Movie Cards Library"/>
       Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>
   );
