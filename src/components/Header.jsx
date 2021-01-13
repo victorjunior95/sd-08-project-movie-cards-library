@@ -5,7 +5,7 @@ import './Header.css';
 class Header extends React.Component {
   render() {
     return (
-      <header className="header" >
+      <header className="header">
         <h1>Movie Cards Library</h1>
       </header>
     );
