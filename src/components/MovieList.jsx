@@ -11,5 +11,18 @@ class MovieList extends React.Component {
     );
   }
 }
+MovieList.defaultProps = {
+  movies,
+};
 
+MovieList.propTypes = {
+  movies: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    map: PropTypes.func,
+  }),
+};
 export default MovieList;
