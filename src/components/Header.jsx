@@ -6,9 +6,9 @@ import Logo from './Logo';
 export default class Header extends React.Component {
   render() {
     return (
-      <header className="header">
+      <header className="movie-card-header">
         <Logo />
-        <h1>Movie Cards Library</h1>
+        <h1 className="page-title">Movie Cards Library</h1>
       </header>
     );
   }

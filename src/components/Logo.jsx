@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Trybeflix from '../images/TRYBEFLIX.png';
+import Trybeflix from '../logo/TRYBEFLIX.png';
 
 export default class Logo extends React.Component {
   render() {
