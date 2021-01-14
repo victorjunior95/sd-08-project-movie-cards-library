@@ -8,16 +8,14 @@ class MovieList extends Component {
 
     return (
       <main>
-        {movies.map((movie) =>
-          return <MovieCard movie={ movie } key={ movie.title } />;
-        )}
+        {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
       </main>
     );
   }
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object),
+  movies: PropTypes.element.isRequired,
 };
 
 export default MovieList;
