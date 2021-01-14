@@ -8,7 +8,11 @@ class Rating extends Component {
     const ratingString = rating.toString();
     // console.log(typeof ratingString);
 
-    return (<span> { ratingString } </span>);
+    return (
+      <span>
+        { ratingString }
+      </span>
+    );
   }
 }
 
