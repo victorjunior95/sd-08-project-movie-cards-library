@@ -6,19 +6,28 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <div>
+      <div className="movie-list">
         {movies
-          .map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+          .map((movie) => (<MovieCard
+            className="movie-card-body"
+            key={ movie.title }
+            movie={ movie }
+          />))}
       </div>
     );
   }
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.object),
-    PropTypes.string,
-  ]).isRequired,
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      immagePath: PropTypes.string,
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      rating: PropTypes.number,
+    }),
+  ).isRequired,
 };
 
 export default MovieList;
