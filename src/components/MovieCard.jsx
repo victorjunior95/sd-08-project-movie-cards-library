@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 export default class MovieCard extends Component {
   // eslint-disable-next-line max-lines-per-function
   render() {
@@ -26,3 +25,12 @@ export default class MovieCard extends Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movies: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
