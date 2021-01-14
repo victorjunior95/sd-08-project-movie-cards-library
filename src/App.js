@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './data.js';
 import Header from './components/Header';
+import movies from './data.js';
+import MovieList from './components/MovieList';
 
 import './App.css';
-import movies from './data.js';
 
 class App extends React.Component {
   render() {
