@@ -2,7 +2,7 @@ import React from 'react';
 
 function Rating(movies) {
   return (
-    <div>
+    <div className="movie-card-rating">
       <p className="rating">
         { movies.rating }
       </p>
