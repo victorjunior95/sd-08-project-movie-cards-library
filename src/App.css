@@ -1,12 +1,12 @@
 body {
-  background-color: rgba(0,0, 65, 0.5);
+  background-color: rgba(0, 0, 65, 0.5);
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: rgba(0,0, 65, 0.5);
+  background-color: rgba(0, 0, 65, 0.5);
   display: flex;
   height: 100px;
   justify-content: center;
@@ -26,7 +26,7 @@ body {
 }
 
 .movie-card {
-  background-color: rgba(0,0, 65, 0.5);
+  background-color: rgba(0, 0, 65, 0.5)
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
   display: flex;
@@ -42,16 +42,16 @@ body {
 }
 
 .movie-card-body {
+  background-color: rgba(0, 0, 65, 0.5);
   flex: 1 1 auto;
   padding: 20px;
-  background-color: rgba(0,0, 65, 0.5)
 }
 
 .movie-card-title {
+  color: #66b8ff;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
-  color: #66b8ff;
 }
 
 .movie-card-subtitle {
@@ -62,9 +62,9 @@ body {
 }
 
 .movie-card-storyline {
+  color: #afcae2;
   font-size: 14px;
   text-align: justify;
-  color: #afcae2;
 }
 
 .rating {
@@ -79,6 +79,5 @@ body {
 .movie-card-rating {
   display: flex;
   justify-content: center;
-  align-self: center;
   padding: 12px 20px;
 }
