@@ -4,15 +4,15 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    // const { imagePath, title, subtitle, storyline } = this.props.movie;
-    const { movie } = this.props;
+    const { movie: { imagePath, title, subtitle, storyline, rating } } = this.props;
+    // const { movie } = this.props;
 
     return (
       <section>
-        <img src={ movie.imagePath } alt="imagem de capa do filme" />
-        <h4>{ movie.title }</h4>
-        <h5>{ movie.subtitle }</h5>
-        <p>{ movie.storyline }</p>
+        <img src={ imagePath } alt="imagem de capa do filme" />
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
         <Rating rating={ rating } />
       </section>
     );
@@ -20,7 +20,13 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.element.isRequired,
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;
