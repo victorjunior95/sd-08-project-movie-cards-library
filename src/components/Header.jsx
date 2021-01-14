@@ -1,3 +1,8 @@
-// implement Header component here
-//teste
-//teste2
+import React from 'react';
+
+class Header extends React.Component {
+  render () {
+  }
+}
+
+export default Header;
