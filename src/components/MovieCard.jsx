@@ -18,7 +18,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.arrayOf(
+  movie: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
@@ -26,7 +26,7 @@ MovieCard.propTypes = {
       rating: PropTypes.number,
       imagePath: PropTypes.string,
     })
-   )
+    )
   }
 
 export default MovieCard;
