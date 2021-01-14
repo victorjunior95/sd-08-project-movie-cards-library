@@ -5,13 +5,19 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-      <span className="rating">{rating}</span>
+      <div className="movie-card-rating">
+        <span className="rating">{rating}</span>
+      </div>
     );
   }
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 0,
 };
 
 export default Rating;
