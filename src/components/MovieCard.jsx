@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 export default class MovieCard extends Component {
   // eslint-disable-next-line max-lines-per-function
   render() {
-    // eslint-disable-next-line react/prop-types
-    // eslint-disable-next-line react/destructuring-assignment
     const { title, subtitle, storyline, imagePath } = this.props.movies;
     return (
       <section>
