@@ -1,9 +1,12 @@
 import React from 'react';
-import Movies from './MovieCard';
-class Header extends React.Component {
+import Card from './MovieCard';
+
+class List extends React.Component {
   render() {
     return (
-      Movies
+      <Card />
     );
   }
 }
+
+export default List;
