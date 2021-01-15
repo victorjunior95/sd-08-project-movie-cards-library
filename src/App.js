@@ -6,10 +6,10 @@ import MovieList from './components/MovieList';
 
 function App() {
   return (
-    <body className="App">
+    <section className="App">
       <Header />
       <MovieList movies={ movies } />
-    </body>
+    </section>
   );
 }
 
