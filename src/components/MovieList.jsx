@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './MovieCard';
 
-class List extends React.Component {
+class MovieList extends React.Component {
   render() {
     return (
       <Card />
@@ -9,4 +9,4 @@ class List extends React.Component {
   }
 }
 
-export default List;
+export default MovieList;
