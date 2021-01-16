@@ -4,10 +4,10 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
+    const { movie: { imagePath, title, subtitle, storyline, rating } } = this.props;
     return (
       <div>
-        <img src={ imagePath }></img>
+        <img src={ imagePath } alt="Imagem do filme" />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
