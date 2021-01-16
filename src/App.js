@@ -10,7 +10,7 @@ function App() {
       <Header />
       <MovieList movies={ movies } />
     </div>
-  )
+  );
 }
 
 export default App;
