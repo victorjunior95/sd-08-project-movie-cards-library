@@ -3,8 +3,8 @@ import { mount, shallow } from 'enzyme';
 
 import App from './App';
 import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
-// import MovieList from './components/MovieList';
+import MovieCard from './components/MovieCard';
+import MovieList from './components/MovieList';
 // import Rating from './components/Rating';
 
 let wrapper;
@@ -50,13 +50,13 @@ describe('2 - Crie um componente `<MovieList />`', () => {
     shallow(<MovieList movies={movies} />);
   });
 
-  it.skip('2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
+  it('2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
     wrapper = shallow(<MovieList movies={movies} />);
 
     expect(wrapper.find(MovieCard).length).toEqual(3);
   });
 
-  it.skip('2.3 - Passe uma key para cada `<MovieCard />` renderizado', () => {
+  it('2.3 - Passe uma key para cada `<MovieCard />` renderizado', () => {
     wrapper = mount(<MovieList movies={movies} />);
     const movieCards = wrapper.find(MovieCard);
 
@@ -69,42 +69,42 @@ describe('2 - Crie um componente `<MovieList />`', () => {
 describe('3 - Crie um componente `<MovieCard />`', () => {
   const movie = movies[0];
 
-  it.skip('3.1 - Renderize o componente `<MovieCard />`', () => {
+  it('3.1 - Renderize o componente `<MovieCard />`', () => {
     shallow(<MovieCard movie={movie} />);
   });
 
-  it.skip('3.2 - Renderize a imagem do filme dentro de uma tag `img`', () => {
+  it('3.2 - Renderize a imagem do filme dentro de uma tag `img`', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('img').prop('src')).toEqual('images/movie_1');
   });
 
-  it.skip('3.3 - Renderize o título do filme dentro de uma tag `h4`', () => {
+  it('3.3 - Renderize o título do filme dentro de uma tag `h4`', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h4').text()).toBe('Movie Title 1');
   });
 
-  it.skip('3.4 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
+  it('3.4 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h5').text()).toBe('Movie Subtitle 1');
   });
 
 
-  it.skip('3.5 - Renderize a sinopse do filme dentro de uma tag `p`', () => {
+  it('3.5 - Renderize a sinopse do filme dentro de uma tag `p`', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('p').text()).toBe('Movie Storyline 1');
   });
 
-  it.skip('3.6 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
+  it('3.6 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('Rating').length).toEqual(1);
   });
 
-  it.skip('3.7 - Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
+  it('3.7 - Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
     wrapper = mount(<MovieCard movie={movie} />);
     const starRating = wrapper.find(Rating);
 
