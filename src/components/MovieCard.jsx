@@ -21,13 +21,5 @@ class MoviCard extends React.Component {
   }
 }
 
-MoviCard.propType = {
-  movie: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    imagePath: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-    storyline: PropTypes.string.isRequired,
-    rating: PropTypes.number.isRequired,
-  }).isRequired,
-};
+MoviCard.propTypes = { movie: PropTypes.arrayOf.isRequired };
 export default MoviCard;
