@@ -31,7 +31,13 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  movie: null,
+  movie: PropTypes.shape({
+    title: 'Title',
+    subtitle: 'Subtitle',
+    storyline: 'StoryLine',
+    rating: 'Rating',
+    imagePath: 'Image',
+  }),
 };
 
 export default MovieCard;
