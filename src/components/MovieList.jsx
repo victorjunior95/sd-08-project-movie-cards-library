@@ -4,11 +4,11 @@ import movies from '../data';
 import PropTypes from 'prop-types';
 
 class MovieList extends React.Component {
-    render() {            
-        return (    
-            <div>       
-                {movies.map(element => <MovieCard key={ element.title } movie={ element }/>)} 
-            </div>                    
+    render() {
+        return (
+            <section>
+                {movies.map((element) => <MovieCard key={ element.title } movie={ element } />)}
+            </section>
         );
     }
 }
