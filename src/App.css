@@ -22,8 +22,8 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
   margin: auto;
+  padding: 48px 30px;
   width: 938px;
 }
 
