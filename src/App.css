@@ -26,7 +26,7 @@ body {
 }
 
 .movie-card {
-  background-color:#343a40;
+  background-color: #343a40;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
   display: flex;
@@ -34,13 +34,13 @@ body {
   height: 400px;
   margin: 5px;
   overflow: hidden;
-  width: 24%;
   transition: 0.3s;
+  width: 24%;
 }
 
 .movie-card:hover {
-  width: 30%;
   height: 450px;
+  width: 30%;
 }
 
 
