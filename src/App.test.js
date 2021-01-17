@@ -3,9 +3,9 @@ import { mount, shallow } from 'enzyme';
 
 import App from './App';
 import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
-// import MovieList from './components/MovieList';
-// import Rating from './components/Rating';
+import MovieCard from './components/MovieCard';
+import MovieList from './components/MovieList';
+import Rating from './components/Rating';
 
 let wrapper;
 
@@ -46,17 +46,17 @@ describe('1 - Crie um componente `<Header />`', () => {
 });
 
 describe('2 - Crie um componente `<MovieList />`', () => {
-  it.skip('2.1 - Renderize o componente `<MovieList />`', () => {
+  it('2.1 - Renderize o componente `<MovieList />`', () => {
     shallow(<MovieList movies={movies} />);
   });
 
-  it.skip('2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
+  it('2.2 - Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
     wrapper = shallow(<MovieList movies={movies} />);
 
     expect(wrapper.find(MovieCard).length).toEqual(3);
   });
 
-  it.skip('2.3 - Passe uma key para cada `<MovieCard />` renderizado', () => {
+  it('2.3 - Passe uma key para cada `<MovieCard />` renderizado', () => {
     wrapper = mount(<MovieList movies={movies} />);
     const movieCards = wrapper.find(MovieCard);
 
@@ -113,11 +113,11 @@ describe('3 - Crie um componente `<MovieCard />`', () => {
 });
 
 describe('4 - Crie um componente `<Rating />`', () => {
-  it.skip('4.1 - Renderize o componente `<Rating />`', () => {
+  it('4.1 - Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
 
-  it.skip('4.2 - Renderize a nota de um filme dentro de `Rating`', () => {
+  it('4.2 - Renderize a nota de um filme dentro de `Rating`', () => {
     wrapper = shallow(<Rating rating={3} />);
 
     expect(wrapper.find('.rating').text()).toEqual('3');
