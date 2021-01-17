@@ -6,7 +6,7 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <section>
+      <section className="movie-list">
         { movies.map((currentMovie) => (
           <MovieCard key={ currentMovie.title } movie={ currentMovie } />
         ))}
@@ -17,11 +17,11 @@ class MovieList extends React.Component {
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.shape({
-    title: String,
-    subtitle: String,
-    storyline: String,
-    rating: Number,
-    imagePath: String,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
   })),
 };
 
