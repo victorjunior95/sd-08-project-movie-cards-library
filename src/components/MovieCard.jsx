@@ -12,8 +12,8 @@ class MovieCard extends React.Component {
     return (
       <div className="movie-card movie-card-body">
         <h4>{title}</h4>
-        <h5 className="movie-card-subtitle">{subtitle}</h5>
-        <p className="movie-card-storyline">{storyline}</p>
+        <h5 className="movie-card-subtitle">{ subtitle }</h5>
+        <p className="movie-card-storyline">{ storyline }</p>
         <img src={ imagePath } alt="" className="movie-card-image" />
         <Rating rating={ rating } />
       </div>
@@ -33,7 +33,7 @@ MovieCard.propTypes = {
 
 MovieCard.defaultProps = {
   movie: {
-    title: 'Stranger',
+    title: 'No movie',
   },
 };
 

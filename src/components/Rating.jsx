@@ -20,5 +20,4 @@ Rating.defaultProps = {
   rating: 'Stranger',
 };
 
-
 export default Rating;
