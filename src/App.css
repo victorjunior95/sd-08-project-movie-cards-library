@@ -71,15 +71,11 @@ body {
   color: white;
   font-size: 12px;
   font-weight: 700;
+  height: auto;
   padding-left: 8px;
-  width: 45px;
-  height:auto;
+  margin-left: 200px ;
   margin-right: 10px;
-  margin-left:200px ;
-  
-
-
-
+  width: 45px;
 }
 
 .movie-card-rating {
