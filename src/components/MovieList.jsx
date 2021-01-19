@@ -1,6 +1,7 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
@@ -8,7 +9,9 @@ class MovieList extends React.Component {
 
     return (
       <section className="movie-list">
-        { filmes[0].title }
+        { filmes.map((filme) =>
+          <MovieCard key={filme.title} movie={filme}/>
+        ) }
       </section>
     );
   }
