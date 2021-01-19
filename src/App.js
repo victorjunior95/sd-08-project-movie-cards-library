@@ -11,8 +11,8 @@ class App extends React.Component {
         <Header />
         <MovieList movies={ movies } />
       </div>
-  );
- }
+    );
+  }
 }
 
 export default App;
