@@ -12,15 +12,15 @@ class MovieCard extends React.Component {
       <section>
         <img
           className="movie-card-image"
-          src={movie.imagePath}
-          alt={movie.title}
+          src={ movie.imagePath }
+          alt={ movie.title }
         />
         <section>
-          <h4 className="movie-card-title">{movie.title}</h4>
-          <h5 className="movie-card-subtitle">{movie.subtitle}</h5>
-          <p className="mivie-card-storyline">{movie.storyline}</p>
+          <h4 className="movie-card-title">{ movie.title }</h4>
+          <h5 className="movie-card-subtitle">{ movie.subtitle }</h5>
+          <p className="mivie-card-storyline">{ movie.storyline }</p>
         </section>
-        <Rating rating={movie.rating} />
+        <Rating rating={ movie.rating } />
       </section>
     );
   }
