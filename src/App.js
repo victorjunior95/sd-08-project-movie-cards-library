@@ -10,4 +10,6 @@ function App() {
   );
 }
 
+// testando fluxo do git
+
 export default App;
