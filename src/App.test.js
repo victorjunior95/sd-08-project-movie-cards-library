@@ -113,11 +113,11 @@ describe('3 - Crie um componente `<MovieCard />`', () => {
 });
 
 describe('4 - Crie um componente `<Rating />`', () => {
-  it.skip('4.1 - Renderize o componente `<Rating />`', () => {
+  it('4.1 - Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
 
-  it.skip('4.2 - Renderize a nota de um filme dentro de `Rating`', () => {
+  it('4.2 - Renderize a nota de um filme dentro de `Rating`', () => {
     wrapper = shallow(<Rating rating={3} />);
 
     expect(wrapper.find('.rating').text()).toEqual('3');
