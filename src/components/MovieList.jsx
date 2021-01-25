@@ -5,7 +5,7 @@ import './MovieList.css';
 
 class MovieList extends Component {
   render() {
-    const movies = this.props.movies;
+    const { movies } = this.props;
     return (
       <div className="movieList">
         {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
