@@ -1,16 +1,20 @@
 import React from 'react';
 
 import Header from './components/Header';
+import MovieList from './components/MovieList';
+import movies from './data';
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return(
+      <main className='App'>
+        <Header />
+        <MovieList movies = { movies } />
+      </main>
+    );
+  }
 }
 
 export default App;
