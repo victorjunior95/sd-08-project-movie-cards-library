@@ -8,10 +8,10 @@ import './App.css';
 
 class App extends React.Component {
   render() {
-    return(
-      <main className='App'>
+    return (
+      <main>
         <Header />
-        <MovieList movies = { movies } />
+        <MovieList movies={ movies } />
       </main>
     );
   }
