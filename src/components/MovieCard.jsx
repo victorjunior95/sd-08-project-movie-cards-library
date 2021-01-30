@@ -8,8 +8,8 @@ class MovieCard extends Component {
     const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
       <section className="movie-card">
-        <img src={ imagePath } alt={ title } className="movie-card-image" />
         <section className="movie-card-body">
+          <img src={ imagePath } alt={ title } className="movie-card-image" />
           <h4 className="movie-card-title">{title}</h4>
           <h5 className="movie-card-subtitle">{subtitle}</h5>
           <p className="movie-card-storyline">{storyline}</p>
@@ -22,6 +22,14 @@ class MovieCard extends Component {
   }
 }
 
-MovieCard.propTypes = { movie: PropTypes.arrayOf.isRequired };
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;
