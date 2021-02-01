@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import MovieCard from "./MovieCard";
-import movies from "../data";
 
-class MovieLIst extends React.Component {
+class MovieLIst extends Component {
   render() {
+	  const movies = this.props.movie;
     return movies.map((movie) => <MovieCard key={movie.title} movie={movie} />);
   }
 }
