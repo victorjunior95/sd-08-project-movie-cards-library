@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Rating extends Component {
@@ -9,5 +9,9 @@ class Rating extends Component {
     );
   }
 }
+
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
 
 export default Rating;
