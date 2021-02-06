@@ -10,6 +10,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <MovieList movies={ movies } />
+        <div>Olá</div>
       </div>
     );
   }
