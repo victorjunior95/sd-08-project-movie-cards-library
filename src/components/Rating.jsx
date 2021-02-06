@@ -4,7 +4,7 @@ import React from 'react';
 class Rating extends React.Component {
   render() {
     return (
-      <h1>Olá</h1>
+      <h1>Olá!</h1>
     );
   }
 }
