@@ -27,4 +27,3 @@ MovieCard.propTypes = {
       })).isRequired,
     };
     export default MovieCard;
-    
