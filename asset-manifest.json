@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/project-movie-cards-library/static/css/main.9d67749b.chunk.css",
-    "main.js": "/project-movie-cards-library/static/js/main.54f6edb2.chunk.js",
-    "main.js.map": "/project-movie-cards-library/static/js/main.54f6edb2.chunk.js.map",
-    "runtime-main.js": "/project-movie-cards-library/static/js/runtime-main.3ee7e82b.js",
-    "runtime-main.js.map": "/project-movie-cards-library/static/js/runtime-main.3ee7e82b.js.map",
-    "static/js/2.838aab56.chunk.js": "/project-movie-cards-library/static/js/2.838aab56.chunk.js",
-    "static/js/2.838aab56.chunk.js.map": "/project-movie-cards-library/static/js/2.838aab56.chunk.js.map",
-    "index.html": "/project-movie-cards-library/index.html",
-    "precache-manifest.e47c51c930015f3c402c4a7081a12735.js": "/project-movie-cards-library/precache-manifest.e47c51c930015f3c402c4a7081a12735.js",
-    "service-worker.js": "/project-movie-cards-library/service-worker.js",
-    "static/css/main.9d67749b.chunk.css.map": "/project-movie-cards-library/static/css/main.9d67749b.chunk.css.map"
+    "main.css": "/movie-cards-library/static/css/main.c82b3b64.chunk.css",
+    "main.js": "/movie-cards-library/static/js/main.efb327ab.chunk.js",
+    "main.js.map": "/movie-cards-library/static/js/main.efb327ab.chunk.js.map",
+    "runtime-main.js": "/movie-cards-library/static/js/runtime-main.c2f7205f.js",
+    "runtime-main.js.map": "/movie-cards-library/static/js/runtime-main.c2f7205f.js.map",
+    "static/js/2.838aab56.chunk.js": "/movie-cards-library/static/js/2.838aab56.chunk.js",
+    "static/js/2.838aab56.chunk.js.map": "/movie-cards-library/static/js/2.838aab56.chunk.js.map",
+    "index.html": "/movie-cards-library/index.html",
+    "precache-manifest.3ad92a552c0e9982a4043cce2a5a3b5a.js": "/movie-cards-library/precache-manifest.3ad92a552c0e9982a4043cce2a5a3b5a.js",
+    "service-worker.js": "/movie-cards-library/service-worker.js",
+    "static/css/main.c82b3b64.chunk.css.map": "/movie-cards-library/static/css/main.c82b3b64.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ee7e82b.js",
+    "static/js/runtime-main.c2f7205f.js",
     "static/js/2.838aab56.chunk.js",
-    "static/css/main.9d67749b.chunk.css",
-    "static/js/main.54f6edb2.chunk.js"
+    "static/css/main.c82b3b64.chunk.css",
+    "static/js/main.efb327ab.chunk.js"
   ]
 }
